@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/idBtnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio"
+            android:minHeight="10dp"
+            android:layout_marginEnd="5dp"
+            android:textAllCaps="false" />
+
+        <!--Button for pausing the audio-->
+        <Button
+            android:id="@+id/idBtnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:minHeight="10dp"
+            android:layout_below="@id/idBtnPlay"
+            android:layout_centerInParent="true"
+            android:text="Pause Audio"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="AL FAT"
+        android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:id="@+id/tvItemArab"/>
+
+</LinearLayout>
